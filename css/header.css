@@ -1,0 +1,171 @@
+/* Los estilos del header */
+
+header {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+
+    align-items: center;
+    
+    margin-top: 1rem;
+
+    padding: 0 1.4rem;
+
+    column-gap: 1.4rem;
+}
+
+.button-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: clamp(0.5rem, 5dvh, 50rem);
+    width: clamp(0.5rem, 5dvh, 50rem);
+
+    cursor: pointer;
+    color: var(--text-color-header);
+    background-color: transparent;
+    border: none;
+    border-radius: clamp(0.1rem, 1dvh, 10rem);
+
+    transition: all 0.3s;
+}
+
+.button-header:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05)
+}
+
+.button-header:active {
+    transform: scale(1);
+}
+
+.button-header svg {
+    height: clamp(0.36rem, 3.6dvh, 36rem);
+    width: auto
+}
+
+#title-header {
+    grid-column: 2;
+
+    /* para alinear el texto con el boton */
+    padding-top: 0.2dvh;
+
+    font-size: clamp(0.36rem, 3.6dvh, 36rem);
+}
+
+#title-header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color-header);
+}
+
+button[data-menu="menu-burger"] {
+    grid-column: 1;
+}
+
+button[data-menu="menu-profile"] {
+    grid-column: 5;
+}
+
+button[data-menu="menu-settings"] {
+    grid-column: 4;
+}
+
+
+
+.show {
+    display: block !important;
+}
+
+#menu-burger {
+    display: none;
+    position: absolute;
+
+    top: 4.6rem;
+    left: 1.4rem;
+    z-index: 1;
+
+    padding: 0.7rem 0.7rem;
+
+    list-style: none;
+    font-size: clamp(0.23rem, 2.3dvh, 23rem);
+    background-color: rgb(248,248,248, 0.9);
+    border-radius: 2dvh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.menu-item {
+    cursor: pointer;
+    border-radius: 1.2dvh;
+}
+
+.menu-item:hover{
+    background-color: var(--text-color-header);
+}
+
+.menu-item a{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    align-items: center;
+    justify-content: left;
+    
+    padding: 0.3rem 0.5rem;
+    padding-right: 3rem;
+
+    text-decoration: none;
+    color: var(--text-color-main);
+}
+
+.menu-item a svg {
+    margin-right: 0.4rem;
+
+    height: clamp(0.5rem, 5dvh, 50rem);
+    width: auto;
+
+    fill: var(--text-color-main);
+}
+
+.separator {
+    border-top: 1px solid var(--text-color-main);
+    margin: 0.5rem;
+}
+
+
+#menu-settings {
+    display: none;
+    position: absolute;
+
+    top: 4.6rem;
+    right: 1.4rem;
+    z-index: 1;
+
+    padding: 0.7rem 0.7rem;
+
+    list-style: none;
+    font-size: clamp(0.23rem, 2.3dvh, 23rem);
+    background-color: rgb(248,248,248, 0.9);
+    border-radius: 2dvh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#menu-profile {
+    display: none;
+    position: absolute;
+
+    top: 4.6rem;
+    right: 1.4rem;
+    z-index: 1;
+
+    padding: 0.7rem 0.7rem;
+
+    list-style: none;
+    font-size: clamp(0.23rem, 2.3dvh, 23rem);
+    background-color: rgb(248,248,248, 0.9);
+    border-radius: 2dvh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Tngan";
+  src: url("../assets/fonts/tngan.ttf") format("truetype");
+}
+
+/* 
+html, body {
+  height: 100%;
+  overflow: hidden;
+} */
+
+body {
+    background-color: #0c4b5d;
+    color: var(--text-color-header);
+}
+
+#pr {
+    position: absolute;
+    top: 200%;
+    color: var(--text-color-header);
+}
+
+#title-projects {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    font-size: clamp(1rem, 10dvh, 100rem);
+    font-weight: bold;
+    color: var(--text-color-header);
+}
+
+#introduction-projects {
+    color: var(--text-color-header);
+    font-family: "Tngan", 'Times New Roman', Times, serif;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(0.2rem, 2dvh, 20rem);
+}
+
+
+/* main{
+    margin-top: 18%;
+
+    justify-items: center;
+    align-items: center;
+} */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    margin-top: 20%;
+
+    row-gap: 5dvh;
+    column-gap: 10dvh;
+
+    padding: 0 10dvh;
+
+}
+
+
+.project {
+    background-color: var(--text-color-header);
+    border-radius: clamp(0.12rem, 1.2dvh, 12rem);
+
+    padding: clamp(0.2rem, 2dvh, 20rem) clamp(0.2rem, 2dvh, 20rem);
+    height: auto;
+    width: auto;
+
+    color: var(--text-color-main);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: clamp(0.2rem, 2.5dvh, 20rem);
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    text-align: center;      /* por si el texto ocupa varias líneas */
+
+    height: 5dvh;
+}
+
+.check-code {
+    display: grid;
+    justify-items: right;
+    margin-right: 1dvh;
+    margin-bottom: 2dvh;
+    font-size: clamp(0.2rem, 2.2dvh, 20rem);
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--text-color-main);
+    font-weight: bold;
+
+}
+
+h3 {
+    font-size: clamp(0.2rem, 1.8dvh, 20rem);
+    margin-left: 1dvh;
+    font-weight: bold;
+}
+
+.text {
+    font-size: clamp(0.2rem, 1.8dvh, 20rem);
+    margin-bottom: 2dvh;
+}
+
+
+.sep1 {
+    border-top: 1px solid var(--text-color-main);
+    margin-top: 2dvh;
+    margin-bottom: 1dvh;
+}
+
+.sep2 {
+    border-top: 1px solid var(--text-color-main);
+    margin-top: auto; /* empuja ese separador al fondo del div */
+    margin-bottom: 1dvh;    
+}
+
+/* Texto derecha (más pequeño) */
+/* .project .right {
+    font-size: clamp(0.1rem, 2dvh, 10rem);
+} */
+
+/* .project p {
+    margin-top: clamp(0.1rem, 1dvh, 10rem);
+    font-size: clamp(0.1rem, 1.7dvh, 10rem);
+} */
+
+
+.code-link {
+    display: block;
+    background-color: var(--text-color-header);
+    border-radius: clamp(0.12rem, 1.2dvh, 12rem);
+
+    padding: clamp(0.1rem, 1dvh, 10rem) clamp(0.1rem, 1dvh, 10rem);
+
+    height: clamp(0.5rem, 6dvh, 50rem);
+    width: clamp(0.5rem, 6dvh, 50rem);
+
+    color: var(--text-color-main);
+    text-decoration: none;
+}
+
+.code-link svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+
+    fill: var(--text-color-main);
+    /* background-color: blueviolet; */
+}

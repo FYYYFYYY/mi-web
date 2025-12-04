@@ -1,0 +1,17 @@
+/* Importar este archivo primero */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --text-color-header: #f8f8f8;
+  --text-color-main: #091a24;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+

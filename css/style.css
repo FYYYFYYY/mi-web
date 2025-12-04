@@ -1,0 +1,114 @@
+
+#background {
+  position: fixed;  /* se queda pegado a la ventana */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../assets/img/index_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#title {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    font-size: clamp(1rem, 10dvh, 100rem);
+    font-weight: bold;
+}
+
+#quote {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    font-size: clamp(0.2rem, 2dvh, 20rem);
+    width: 100%;
+}
+
+#author {
+    display: block;
+    margin-top: 1.6dvh;
+    margin-right: 1.5rem;
+
+    font-style: italic;
+    font-size: clamp(0.18rem, 1.8dvh, 18rem);
+}
+
+#author-link {
+    text-decoration: none;
+    color: var(--text-color-main);
+    position: relative;
+    cursor: pointer;     
+}
+
+#author-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-color-main);
+  transition: width 0.3s ease;
+}
+
+#author-link:hover::after {
+  width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 24%;
+    padding: 0 10dvw;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 14dvw;
+
+    text-decoration: none;
+    font-size: clamp(1rem, 10dvh, 100rem);
+    font-family: SimSun;
+    
+    border-radius: clamp(0.2rem, 2dvh, 20rem);
+    cursor: pointer;
+
+    color: var(--text-color-main);
+    background-color: transparent;
+
+    transition: all 0.2s ease-in;
+}
+
+.item.hovered {
+    transition: all 0.2s ease-in;
+
+    background-color: rgba(255, 255, 255, 0.25);
+    color: var(--text-color-header);
+    transform: scale(1.05)
+}
