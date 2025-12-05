@@ -58,7 +58,6 @@ main{
 
     margin-top: 20%;
 
-    row-gap: 5dvh;
     column-gap: 10dvh;
 
     padding: 0 10dvh;
@@ -78,6 +77,8 @@ main{
 
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 5dvh;
 }
 
 .project-title {
@@ -114,6 +115,7 @@ h3 {
 .text {
     font-size: clamp(0.2rem, 1.8dvh, 20rem);
     margin-bottom: 2dvh;
+    min-height: 12.6dvh;
 }
 
 
