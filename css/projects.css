@@ -14,12 +14,6 @@ body {
     color: var(--text-color-header);
 }
 
-#pr {
-    position: absolute;
-    top: 200%;
-    color: var(--text-color-header);
-}
-
 #title-projects {
     position: absolute;
     top: 12%;
@@ -43,13 +37,17 @@ body {
     font-size: clamp(0.2rem, 2dvh, 20rem);
 }
 
+.torre {
+    margin-top: 8%;
+    margin-bottom: -40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 
-/* main{
-    margin-top: 18%;
+    width: 45dvw;
 
-    justify-items: center;
-    align-items: center;
-} */
+    /* background-color: blueviolet; */
+}
+
 
 main{
     display: grid;

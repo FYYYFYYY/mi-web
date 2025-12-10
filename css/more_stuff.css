@@ -1,0 +1,18 @@
+
+
+body {
+    background-color: #4b0c5d;
+    color: var(--text-color-header);
+}
+
+#title-more-stuff {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    font-size: clamp(1rem, 10dvh, 100rem);
+    font-weight: bold;
+    color: var(--text-color-header);
+}
